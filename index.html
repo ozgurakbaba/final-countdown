@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Countdown</title>
+    <meta name="description" content="Creative Front End (UI/UX) Engineer and Technical SEO Consultant who loves building fast, scalable and meaningful consumer-facing digital products and services.">
+    <meta name="keywords" content="Ozgur Akbaba, ozgur akbaba, ozgurakbaba, OZGURAKBABA, Özgür Akbaba, ÖZGÜRAKBABA, Front End Engineer, Front End Developer, Full Stack Web Engineer, Full Stack Web Developer, UI Developer, UX Developer, Software Engineer, SEO Consultant, Technical Program Manager, Los Angeles, LA, California">
+    <meta name="language" content="en">
+    <link rel="canonical" href="https://www.ozgurakbaba.com/">
+    <link hreflang="x-default" rel="alternate" href="https://www.ozgurakbaba.com/">
+    <meta name="copyright" content="Copyright © 2021 Ozgur Akbaba.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="noodp">
+    <meta name="rating" content="general">
+    <link rel="shortcut icon" href="https://www.ozgurakbaba.com/favicon.ico">
+    <meta property="og:title" content="Ozgur Akbaba | Creative Front End (UI/UX) Engineer">
+    <meta property="og:description" content="Creative Front End (UI/UX) Engineer and Technical SEO Consultant who loves building fast, scalable and meaningful consumer-facing digital products and services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ozgurakbaba.com/">
+    <meta property="og:image" content="https://www.ozgurakbaba.com/images/bnr-social-oa.jpg">
+    <meta property="og:site_name" content="Ozgur Akbaba | Creative Front End (UI/UX) Engineer">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ozgur Akbaba | Creative Front End (UI/UX) Engineer">
+    <meta name="twitter:description" content="Creative Front End (UI/UX) Engineer and Technical SEO Consultant who loves building fast, scalable and meaningful consumer-facing digital products and services.">
+    <meta name="twitter:creator" content="@ozgurakbaba">
+    <meta name="twitter:image" content="https://www.ozgurakbaba.com/images/bnr-social-oa.jpg">
+    <link href="/styles/sanitize.min.css" rel="stylesheet" />
+    <link href="/styles/global.css" rel="stylesheet" />
+</head>
+<body class="dark">
+    <div class="color-picker">
+        <ul>
+            <li><button onclick="changeTheme('yellow')" class="btn-color yellow" title="The Sun"></button></li>
+            <li><button onclick="changeTheme('red')" class="btn-color red" title="True Blood"></button></li>
+            <li><button onclick="changeTheme('green')" class="btn-color green" title="Natural"></button></li>
+            <li><button onclick="changeTheme('blue')" class="btn-color blue" title="Deep Ocean"></button></li>
+        </ul>
+    </div>
+    <button id="toggler" onclick="toggleTheme()" class="btn" title="Light vs Dark"></button>
+    <div class="timer-container">
+        <div class="timer border-yellow">
+            <input id="timerSlider" type="range" min="0" max="60" value="0" class="slider" />
+            <input id="timerInput" type="number" min="0" max="60" alt="Begin timer" 
+            placeholder="00" class="hidden" />
+            <h1 id="timerValue">00:00</h1>
+            <button id="timerButton" class="hidden" title="Begin Timer" onclick="beginTimer()">Begin Timer</button>
+        </div>
+        <button id="timerReset" class="reset" title="Reset" onclick="resetTimer()">Reset</button>
+    </div>
+    <div class="snackbar"></div>
+    
+    <script src="scripts/timer.js"></script>
+</body>
+</html>
