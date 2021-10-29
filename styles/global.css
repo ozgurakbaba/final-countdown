@@ -73,3 +73,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 input[type=number] {-moz-appearance: textfield;}
 /* helpers */
 .hidden {visibility:hidden;display:none;}
+/* media queries */
+@media only screen and (max-width: 375px) {
+    .timer-container {height: 50vh;}
+}
