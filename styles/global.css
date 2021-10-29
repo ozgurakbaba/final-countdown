@@ -75,5 +75,5 @@ input[type=number] {-moz-appearance: textfield;}
 .hidden {visibility:hidden;display:none;}
 /* media queries */
 @media only screen and (max-width: 375px) {
-    .timer-container {height: 50vh;}
+    .timer-container {height: 60vh;}
 }
