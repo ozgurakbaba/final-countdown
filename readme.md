@@ -1,2 +1,2 @@
 ## Final Countdown
-A digital timer inspired by the original TimeTimer. 
+A minimalistic timer to keep track of time. Inspired by original visual timer, Time Timer.
