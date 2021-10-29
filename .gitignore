@@ -1,0 +1,6 @@
+#ignore node_modules folder
+node_modules
+#ignore mac system files
+.DS_store
+#ignore non-minified project files
+styles/global.css
