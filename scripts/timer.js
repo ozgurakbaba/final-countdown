@@ -3,7 +3,7 @@ const MAX_SECONDS = 60;
 
 // const timerInput = document.querySelector("input");
 const timerValue = document.getElementById("timerValue");
-const timerButton = document.getElementById("timerButton");
+// const timerButton = document.getElementById("timerButton");
 const timerReset = document.getElementById("timerReset");
 const timerSlider = document.getElementById("timerSlider");
 const snackbar = document.querySelector(".snackbar");
@@ -15,6 +15,13 @@ let isDarkTheme = true;
 let isTimerOff = true;
 let sequencer;
 let lastColor = "";
+
+// service workers (pwa)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
 
 timerSlider.oninput = function() {
     timerValue.textContent = this.value + ":00";
