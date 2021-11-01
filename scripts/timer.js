@@ -67,7 +67,7 @@ function beginTimer(e) {
                 seconds = 60;
             }
             // the last 5 mins, warning!
-            if (timer < 5) changeTheme(red);
+            if (timer < 5) changeTheme('red');
             // terminate interval
             if (timer < 0) clearInterval(sequencer);
         }, DURATION)
