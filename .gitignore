@@ -4,3 +4,5 @@ node_modules
 .DS_store
 #ignore non-minified project files
 styles/global.css
+#ignore sources folder
+sources

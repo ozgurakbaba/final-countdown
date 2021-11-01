@@ -48,7 +48,7 @@ function updateTimerValue(e) {
 function beginTimer(e) {
     if (timerValue.innerText == "00:00") displaySnackbar("Timer is not set");
     else {
-        console.log('timer is running');
+        // console.log('timer is running');     // testing
         isTimerOff = false;
         displayReset();
         // timerReset.classList.remove("hidden");
@@ -66,6 +66,8 @@ function beginTimer(e) {
                 timer -= 1;
                 seconds = 60;
             }
+            // the last 5 mins, warning!
+            if (timer < 5) changeTheme(red);
             // terminate interval
             if (timer < 0) clearInterval(sequencer);
         }, DURATION)
@@ -73,7 +75,7 @@ function beginTimer(e) {
 }
 
 function resetTimer() {
-    console.log("timer is stopped");
+    // console.log("timer is stopped");    // testing
     clearInterval(sequencer);
     isTimerOff = true;
     timerValue.innerText = "00:00";
